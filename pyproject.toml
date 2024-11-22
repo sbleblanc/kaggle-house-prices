@@ -1,0 +1,24 @@
+[project]
+name="kaggle_house_prices"
+version = "0.0.1"
+requires-python = ">= 3.10"
+dependencies = [
+    "torch",
+    "pandas",
+    "numpy",
+    "click",
+    "notebook",
+    "dvc",
+    "pytest",
+    "scipy",
+    "xgboost",
+    "scikit-learn"
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["kaggle_house_prices*"]
+namespaces = false
